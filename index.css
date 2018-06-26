@@ -1,0 +1,98 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+button {
+  background-color: rgb(254, 192, 19);
+  color: white;
+  border-radius: 4px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25vh;
+}
+.linksContainer {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 20px;
+  color: rgb(254, 192, 19);
+  padding-top: 20px;
+}
+
+.small {
+  height: 40px;
+  width: 80px;
+  margin-top: 20px;
+}
+
+.top {
+  line-height: 40px;
+  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+}
+
+.middle {
+  line-height: 75px;
+  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 75px;
+  margin-top: 50px;
+}
+
+.large {
+  line-height: 27px;
+  margin-left: 33vw;
+  margin-right: 33vw;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 50px;
+}
+
+.nav__dropdown {
+  display: none;
+}
+
+.nav__dropdown--show {
+  display: block;
+}
+
+.dropdown__links {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 850px) {
+  .small {
+    display: none;
+  }
+  .link {
+    display: inline;
+  }
+  .linksContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14.4px;
+    padding-top: 20px;
+  }
+}
